@@ -4,9 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ═══════════════════════════════════════
-     SEO PRIMARIO
-════════════════════════════════════════ -->
 <title>Instalación de Aire Acondicionado CABA y Zona Sur | AireZonaSur</title>
 <meta name="description" content="Instalación, reparación y service de aire acondicionado en CABA y Zona Sur. Técnicos matriculados. Samsung, LG, Daikin, BGH, Carrier, Midea. Presupuesto sin cargo.">
 <meta name="keywords" content="aire acondicionado CABA, aire acondicionado zona sur, instalación aire acondicionado, service aire acondicionado, reparación aire acondicionado, Buenos Aires">
@@ -14,9 +11,6 @@
 <meta name="author" content="AireZonaSur">
 <link rel="canonical" href="https://airezonasur.com.ar/">
 
-<!-- ═══════════════════════════════════════
-     OPEN GRAPH / SOCIAL
-════════════════════════════════════════ -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://airezonasur.com.ar/">
 <meta property="og:title" content="Instalación Aire Acondicionado CABA y Zona Sur | AireZonaSur">
@@ -24,14 +18,10 @@
 <meta property="og:image" content="https://airezonasur.com.ar/img/og.jpg">
 <meta property="og:locale" content="es_AR">
 
-<!-- TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Aire Acondicionado CABA y Zona Sur | AireZonaSur">
 <meta name="twitter:description" content="Instalación y service profesional. Técnicos matriculados. Presupuesto sin cargo.">
 
-<!-- ═══════════════════════════════════════
-     SCHEMA.ORG – LOCAL BUSINESS
-════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,67 +47,127 @@
 }
 </script>
 
-<!-- ═══════════════════════════════════════
-     PERFORMANCE – PRECONNECT & DNS
-════════════════════════════════════════ -->
+<!-- PERFORMANCE: preconnect solo lo que se usa above-the-fold -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://wa.me">
 
-<!-- ═══════════════════════════════════════
-     FONTS – carga eficiente
-════════════════════════════════════════ -->
+<!-- FONTS: carga no bloqueante -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap"></noscript>
 
-<!-- BOOTSTRAP CSS + ICONS – CDN con crossorigin -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- BOOTSTRAP CSS: carga diferida (no bloquea render) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+      media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+</noscript>
 
+<!-- Bootstrap Icons: diferido para no bloquear LCP -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</noscript>
+
+<!-- CSS propio: diferido -->
 <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+<!-- CSS crítico inline: evita FOUC en navbar y hero -->
+<style>
+:root{
+  --c-bg:#060e1a;--c-accent:#00c4ff;--c-text:#e2eaf4;--c-muted:#b8cfe0;
+  --c-border:#1e3a58;--c-card:#122035;--f-head:'Barlow Condensed',sans-serif;
+  --f-body:'Barlow',sans-serif;--radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);background:var(--c-bg);color:var(--c-text);line-height:1.65;overflow-x:hidden}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(6,14,26,.92);border-bottom:1px solid var(--c-border);padding:14px 0}
+.nav-brand{font-family:var(--f-head);font-size:1.6rem;font-weight:900;color:#fff;letter-spacing:.05em;text-decoration:none}
+.nav-brand span{color:var(--c-accent)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0a1428 0%,#1a3a52 25%,#0f2847 50%,#081620 75%,#0a1428 100%);min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:180px 20px 80px}
+h1,h2,h3,h4{font-family:var(--f-head);line-height:1.15;text-transform:uppercase;letter-spacing:.03em}
+/* Accesibilidad: focus visible global */
+:focus-visible{outline:3px solid var(--c-accent);outline-offset:3px;border-radius:4px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+/* Skip link */
+.skip-link{position:absolute;top:-100%;left:0;background:var(--c-accent);color:#060e1a;padding:8px 16px;font-weight:700;z-index:9999;text-decoration:none;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+/* Hamburger base */
+.nav-hamburger{display:none;background:none;border:1.5px solid var(--c-border);color:var(--c-text);padding:6px 10px;border-radius:8px;cursor:pointer;font-size:1.2rem;line-height:1}
+@media(max-width:768px){
+  .nav-hamburger{display:flex;align-items:center;justify-content:center}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(6,14,26,.98);border-bottom:1px solid var(--c-border);padding:16px 24px;gap:12px}
+  .nav-links.open{display:flex}
+  .hero{min-height:80vh;padding:100px 20px 60px}
+}
+</style>
 </head>
 
 <body>
+
+<!-- SKIP NAV: accesibilidad teclado -->
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
 <!-- ═══ NAVBAR ═══════════════════════════ -->
 <nav class="site-nav" role="navigation" aria-label="Navegación principal">
   <div class="container d-flex align-items-center justify-content-between">
     <a href="/" class="nav-brand" aria-label="Inicio AireZonaSur">Aire<span>ZonaSur</span></a>
-    <div class="nav-links" aria-label="Menú">
-      <a href="#servicios">Servicios</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="tel:+5491138479551" class="nav-phone"><i class="bi bi-telephone-fill" aria-hidden="true"></i> 11 3847-9551</a>
-      <a href="https://wa.me/5491138479551?text=Hola%2C%20quiero%20un%20presupuesto" class="nav-cta"><i class="bi bi-whatsapp" aria-hidden="true"></i> Presupuesto</a>
+
+    <!-- Hamburger mobile -->
+    <button class="nav-hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+        <rect y="4" width="22" height="2.2" rx="1.1" fill="currentColor"/>
+        <rect y="10" width="22" height="2.2" rx="1.1" fill="currentColor"/>
+        <rect y="16" width="22" height="2.2" rx="1.1" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <div class="nav-links" id="nav-menu" role="menubar">
+      <a href="#servicios" role="menuitem">Servicios</a>
+      <a href="#marcas" role="menuitem">Marcas</a>
+      <a href="#trabajos" role="menuitem">Trabajos</a>
+      <a href="tel:+5491138479551" class="nav-phone" aria-label="Llamar al 11 3847-9551">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        11 3847-9551
+      </a>
+      <a href="https://wa.me/5491138479551?text=Hola%2C%20quiero%20un%20presupuesto"
+         class="nav-cta"
+         aria-label="Pedir presupuesto por WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        Presupuesto
+      </a>
     </div>
   </div>
 </nav>
 
-<main>
+<main id="main-content">
 
+<!-- ═══ HERO ══════════════════════════════ -->
 <header class="hero" role="banner">
-
-  <!-- IMAGEN DE FONDO OPTIMIZADA -->
-  <picture class="hero-bg">
-    <!-- versión liviana WebP -->
+  <picture class="hero-bg" aria-hidden="true">
     <source srcset="img/hero-aire.webp" type="image/webp">
-    
-    <!-- fallback JPG -->
-    <img src="img/hero-aire.png" 
-         alt="Técnico reparando aire acondicionado"
+    <img src="img/hero-aire.png"
+         alt=""
          loading="eager"
          fetchpriority="high"
+         decoding="async"
          width="1920"
          height="1080">
   </picture>
 
   <div class="container hero-inner">
 
-    <div class="hero-badge">
-      <i class="bi bi-patch-check-fill"></i>
+    <div class="hero-badge" aria-label="Técnicos matriculados en CABA y Zona Sur">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/></svg>
       Técnicos matriculados · CABA y Zona Sur
     </div>
 
@@ -132,8 +182,12 @@
     </p>
 
     <div class="hero-actions">
-      <a href="https://wa.me/5491138479551?text=Hola%2C%20quiero%20un%20presupuesto%20para%20aire%20acondicionado" class="btn-primary-custom" onclick="trackWhatsapp('Hero WhatsApp')">
-        <i class="bi bi-whatsapp"></i> Pedir presupuesto
+      <a href="https://wa.me/5491138479551?text=Hola%2C%20quiero%20un%20presupuesto%20para%20aire%20acondicionado"
+         class="btn-primary-custom"
+         aria-label="Pedir presupuesto por WhatsApp"
+         onclick="trackWhatsapp('Hero WhatsApp')">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        Pedir presupuesto
       </a>
       <a href="#servicios" class="btn-ghost">
         Ver servicios
@@ -142,6 +196,7 @@
 
   </div>
 </header>
+
 <!-- ═══ SERVICIOS ═══════════════════════ -->
 <section class="section" id="servicios" aria-labelledby="srv-heading">
   <div class="container">
@@ -151,45 +206,57 @@
       <p class="section-sub">Cubrimos todo el ciclo de vida de tu equipo, desde la instalación hasta el mantenimiento anual.</p>
     </div>
 
-    <div class="srv-grid" role="list">
+    <ul class="srv-grid" role="list">
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-tools"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-3.14 3.142-1.526-1.527 3.14-3.14A3 3 0 0 0 13 0c-1.468 0-2.7 1.062-2.942 2.461l-2.676 2.676-1.341-1.34C5.604 3.215 5.53 3.074 5.5 2.9 5.463 2.668 5.37 2.45 5.23 2.2L3.081.52A1 1 0 0 0 1 0z"/></svg>
+        </div>
         <h3>Instalación</h3>
         <p>Instalamos equipos split y multisplit de todas las marcas con garantía de trabajo y mano de obra.</p>
-      </article>
+      </li>
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-wrench-adjustable-circle"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/></svg>
+        </div>
         <h3>Reparación</h3>
         <p>Diagnóstico y solución de fallas: no enfría, pierde agua, hace ruido, o no enciende.</p>
-      </article>
+      </li>
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-wind"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zm0 10a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0V11.5A.5.5 0 0 1 8 11zm6-4.5a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .5.5zm-13 0a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5zm11.854-4.354a.5.5 0 0 1 0 .708l-1.768 1.767a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.893 13.5a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.768-1.768a.5.5 0 0 1 .707-.707l1.768 1.767a.5.5 0 0 1 0 .708zm-9.193-9.193a.5.5 0 0 1-.707 0L3.893 2.5a.5.5 0 0 1 .707-.707l1.768 1.768a.5.5 0 0 1 0 .707zM8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+        </div>
         <h3>Service y limpieza</h3>
         <p>Limpieza profunda de filtros y evaporador para mayor eficiencia y ahorro en tu factura de luz.</p>
-      </article>
+      </li>
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-snow"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13z"/></svg>
+        </div>
         <h3>Carga de gas</h3>
         <p>Recarga de gas refrigerante R32 y R410A con equipo certificado y control de presiones.</p>
-      </article>
+      </li>
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-building"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.5-1.5H2V1.78a1.5 1.5 0 0 1 1.864-1.455l8.272 2zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/></svg>
+        </div>
         <h3>Proyectos comerciales</h3>
         <p>Soluciones para locales, oficinas y comercios: cassette, conducto y VRF.</p>
-      </article>
+      </li>
 
-      <article class="srv-card reveal" role="listitem">
-        <div class="srv-icon" aria-hidden="true"><i class="bi bi-calendar2-check"></i></div>
+      <li class="srv-card reveal">
+        <div class="srv-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm10.854 4.854-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L8.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/></svg>
+        </div>
         <h3>Mantenimiento anual</h3>
         <p>Plan de service preventivo para que tu equipo rinda al 100% todo el año.</p>
-      </article>
+      </li>
 
-    </div>
+    </ul>
   </div>
 </section>
 
@@ -199,36 +266,29 @@
     <div class="reveal">
       <span class="section-tag">Nuestra experiencia</span>
       <h2 class="section-title" id="trabajos-heading">Trabajos Realizados</h2>
-      <p class="section-sub">Revisa algunos de los proyectos exitosos que hemos completado para nuestros clientes.</p>
+      <p class="section-sub">Revisá algunos de los proyectos exitosos que completamos para nuestros clientes.</p>
     </div>
 
-    <div class="gallery-grid" role="list">
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images.jfif" alt="Instalación Split Samsung Avellaneda" loading="lazy">
-      </div>
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images (1).jfif" alt="Service LG Multisplit CABA" loading="lazy">
-      </div>
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images (2).jfif" alt="Reparación Daikin Banfield" loading="lazy">
-      </div>
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images (3).jfif" alt="Instalación BGH Quilmes" loading="lazy">
-      </div>
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images (4).jfif" alt="Carga de gas R410A Lomas de Zamora" loading="lazy">
-      </div>
-
-      <div class="gallery-item reveal" role="listitem">
-        <img src="img/images (5).jfif" alt="Proyecto Comercial CABA" loading="lazy">
-      </div>
-
-    </div>
+    <ul class="gallery-grid" role="list">
+      <li class="gallery-item reveal">
+        <img src="img/images.jfif" alt="Instalación de split Samsung en Avellaneda" loading="lazy" width="400" height="300">
+      </li>
+      <li class="gallery-item reveal">
+        <img src="img/images (1).jfif" alt="Service de multisplit LG en CABA" loading="lazy" width="400" height="300">
+      </li>
+      <li class="gallery-item reveal">
+        <img src="img/images (2).jfif" alt="Reparación de equipo Daikin en Banfield" loading="lazy" width="400" height="300">
+      </li>
+      <li class="gallery-item reveal">
+        <img src="img/images (3).jfif" alt="Instalación de split BGH en Quilmes" loading="lazy" width="400" height="300">
+      </li>
+      <li class="gallery-item reveal">
+        <img src="img/images (4).jfif" alt="Carga de gas R410A en Lomas de Zamora" loading="lazy" width="400" height="300">
+      </li>
+      <li class="gallery-item reveal">
+        <img src="img/images (5).jfif" alt="Proyecto comercial de climatización en CABA" loading="lazy" width="400" height="300">
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -240,57 +300,69 @@
       <h2 class="section-title" id="why-heading">¿Por qué elegirnos?</h2>
     </div>
 
-    <div class="why-grid">
+    <ul class="why-grid" role="list">
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/></svg>
+        </div>
         <div>
           <h3>Técnicos matriculados</h3>
           <p>Habilitados para instalaciones eléctricas y refrigeración. Seguridad garantizada.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-lightning-charge"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+        </div>
         <div>
           <h3>Rápida respuesta</h3>
           <p>Coordinamos el turno el mismo día. Sin largas esperas.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-receipt"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zm0 3h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1z"/><path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5zM1 2h14v12H1V2zm4-1a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 1z"/></svg>
+        </div>
         <div>
           <h3>Precio sin sorpresas</h3>
           <p>Presupuesto detallado antes de empezar. Sin costos ocultos.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/></svg>
+        </div>
         <div>
           <h3>Toda la Zona Sur</h3>
           <p>Cubrimos Lanús, Lomas, Banfield, Quilmes, Avellaneda y CABA.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-star"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.46 0z"/></svg>
+        </div>
         <div>
           <h3>Garantía de trabajo</h3>
           <p>Garantizamos la instalación y los repuestos utilizados.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="why-item reveal">
-        <div class="why-icon" aria-hidden="true"><i class="bi bi-credit-card2-front"></i></div>
+      <li class="why-item reveal">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7zm-9 2h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1zm4 0h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1 0-1z"/></svg>
+        </div>
         <div>
           <h3>Múltiples formas de pago</h3>
           <p>Efectivo, transferencia, MercadoPago y cuotas sin interés.</p>
         </div>
-      </div>
+      </li>
 
-    </div>
+    </ul>
   </div>
 </section>
 
@@ -302,32 +374,40 @@
       <h2 class="section-title" id="proc-heading">¿Cómo funciona?</h2>
     </div>
 
-    <div class="process-grid" role="list">
-      <div class="process-step reveal" role="listitem">
-        <div class="step-num">01</div>
-        <div class="step-icon" aria-hidden="true"><i class="bi bi-chat-dots"></i></div>
+    <ol class="process-grid" aria-label="Pasos del proceso">
+      <li class="process-step reveal">
+        <div class="step-num" aria-hidden="true">01</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/></svg>
+        </div>
         <h3>Escribinos</h3>
         <p>Mandanos un WhatsApp con tu consulta o tipo de trabajo.</p>
-      </div>
-      <div class="process-step reveal" role="listitem">
-        <div class="step-num">02</div>
-        <div class="step-icon" aria-hidden="true"><i class="bi bi-clipboard-check"></i></div>
+      </li>
+      <li class="process-step reveal">
+        <div class="step-num" aria-hidden="true">02</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/></svg>
+        </div>
         <h3>Presupuesto</h3>
         <p>Te enviamos un presupuesto claro el mismo día, sin cargos.</p>
-      </div>
-      <div class="process-step reveal" role="listitem">
-        <div class="step-num">03</div>
-        <div class="step-icon" aria-hidden="true"><i class="bi bi-calendar-event"></i></div>
+      </li>
+      <li class="process-step reveal">
+        <div class="step-num" aria-hidden="true">03</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>
+        </div>
         <h3>Coordinamos</h3>
         <p>Elegís el turno que mejor te quede. Llegamos en horario.</p>
-      </div>
-      <div class="process-step reveal" role="listitem">
-        <div class="step-num">04</div>
-        <div class="step-icon" aria-hidden="true"><i class="bi bi-check2-circle"></i></div>
+      </li>
+      <li class="process-step reveal">
+        <div class="step-num" aria-hidden="true">04</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+        </div>
         <h3>Listo</h3>
         <p>Trabajo prolijo, limpieza incluida. Tu aire funcionando al 100%.</p>
-      </div>
-    </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -339,75 +419,28 @@
     <p class="section-sub mx-auto">Instalamos y reparamos equipos de las principales marcas del mercado argentino.</p>
   </div>
 
-  <div class="track-wrap mt-5" role="region" aria-label="Marcas con las que trabajamos">
+  <!-- aria-label en el wrapper visible, track oculto de lectores -->
+  <div class="track-wrap mt-5" role="region" aria-label="Carrusel de marcas con las que trabajamos">
     <div class="track" aria-hidden="true">
-      <!-- set 1 -->
-      <div class="brand-item">
-        <i class="bi bi-phone"></i><!-- Samsung – mejor ícono disponible en BI -->
-        <span>Samsung</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-display"></i>
-        <span>LG</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-fan"></i>
-        <span>Carrier</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-thermometer-sun"></i>
-        <span>Daikin</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-wind"></i>
-        <span>Midea</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-snow2"></i>
-        <span>BGH</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-house-gear"></i>
-        <span>Hitachi</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-cpu"></i>
-        <span>Toshiba</span>
-      </div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/><path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg><span>Samsung</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/></svg><span>LG</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zm0 10a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0V11.5A.5.5 0 0 1 8 11zm6-4.5a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .5.5zm-13 0a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5zm11.854-4.354a.5.5 0 0 1 0 .708l-1.768 1.767a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.893 13.5a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.768-1.768a.5.5 0 0 1 .707-.707l1.768 1.767a.5.5 0 0 1 0 .708zm-9.193-9.193a.5.5 0 0 1-.707 0L3.893 2.5a.5.5 0 0 1 .707-.707l1.768 1.768a.5.5 0 0 1 0 .707zM8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg><span>Carrier</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6z"/></svg><span>Daikin</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zm0 10a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0V11.5A.5.5 0 0 1 8 11zm-5.657-8.657a.5.5 0 0 1 .707 0l1.768 1.768a.5.5 0 1 1-.707.707L2.343 3.05a.5.5 0 0 1 0-.707zm9.193 9.193a.5.5 0 0 1 .707 0l1.768 1.768a.5.5 0 0 1-.708.707l-1.767-1.768a.5.5 0 0 1 0-.707zM14 8a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h2.5A.5.5 0 0 1 14 8zM2.5 8a.5.5 0 0 1-.5.5H-.5a.5.5 0 0 1 0-1H2a.5.5 0 0 1 .5.5z"/></svg><span>Midea</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13z"/></svg><span>BGH</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.5-1.5H2V1.78a1.5 1.5 0 0 1 1.864-1.455l8.272 2z"/></svg><span>Hitachi</span></div>
+      <div class="brand-item"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0z"/></svg><span>Toshiba</span></div>
       <!-- set 2 (espejo para loop) -->
-      <div class="brand-item">
-        <i class="bi bi-phone"></i>
-        <span>Samsung</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-display"></i>
-        <span>LG</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-fan"></i>
-        <span>Carrier</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-thermometer-sun"></i>
-        <span>Daikin</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-wind"></i>
-        <span>Midea</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-snow2"></i>
-        <span>BGH</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-house-gear"></i>
-        <span>Hitachi</span>
-      </div>
-      <div class="brand-item">
-        <i class="bi bi-cpu"></i>
-        <span>Toshiba</span>
-      </div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/><path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg><span>Samsung</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/></svg><span>LG</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zm0 10a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0V11.5A.5.5 0 0 1 8 11zm6-4.5a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .5.5zm-13 0a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5zm11.854-4.354a.5.5 0 0 1 0 .708l-1.768 1.767a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.893 13.5a.5.5 0 0 1-.707-.707l1.768-1.768a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.768-1.768a.5.5 0 0 1 .707-.707l1.768 1.767a.5.5 0 0 1 0 .708zm-9.193-9.193a.5.5 0 0 1-.707 0L3.893 2.5a.5.5 0 0 1 .707-.707l1.768 1.768a.5.5 0 0 1 0 .707zM8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg><span>Carrier</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6z"/></svg><span>Daikin</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zm0 10a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0V11.5A.5.5 0 0 1 8 11zm-5.657-8.657a.5.5 0 0 1 .707 0l1.768 1.768a.5.5 0 1 1-.707.707L2.343 3.05a.5.5 0 0 1 0-.707zm9.193 9.193a.5.5 0 0 1 .707 0l1.768 1.768a.5.5 0 0 1-.708.707l-1.767-1.768a.5.5 0 0 1 0-.707zM14 8a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h2.5A.5.5 0 0 1 14 8zM2.5 8a.5.5 0 0 1-.5.5H-.5a.5.5 0 0 1 0-1H2a.5.5 0 0 1 .5.5z"/></svg><span>Midea</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13z"/></svg><span>BGH</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.5-1.5H2V1.78a1.5 1.5 0 0 1 1.864-1.455l8.272 2z"/></svg><span>Hitachi</span></div>
+      <div class="brand-item" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0z"/></svg><span>Toshiba</span></div>
     </div>
+  </div>
 </section>
 
 <!-- ═══ TESTIMONIOS ══════════════════════ -->
@@ -417,26 +450,41 @@
       <span class="section-tag">Lo que dicen nuestros clientes</span>
       <h2 class="section-title" id="testi-heading">Opiniones reales</h2>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Vinieron el mismo día que llamé. Instalaron el split en dos horas, dejaron todo limpio y el precio fue exactamente el que me dijeron antes de empezar."</p>
-        <div class="testi-author">Marcela R.</div>
-        <div class="testi-zone"><i class="bi bi-geo-alt-fill"></i> Lanús Este</div>
-      </div>
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"El técnico diagnosticó el problema en minutos. Carga de gas R32 con todo el equipo certificado. Volvió a enfriar como nuevo. Muy recomendable."</p>
-        <div class="testi-author">Diego F.</div>
-        <div class="testi-zone"><i class="bi bi-geo-alt-fill"></i> Avellaneda</div>
-      </div>
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Contraté el service anual para tres equipos del local. Puntualidad, trabajo prolijo y precio justo. Ya los tengo agendados para el próximo año."</p>
-        <div class="testi-author">Carolina M.</div>
-        <div class="testi-zone"><i class="bi bi-geo-alt-fill"></i> CABA, Parque Patricios</div>
-      </div>
-    </div>
+    <ul class="testi-grid" role="list">
+      <li class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote class="testi-text">Vinieron el mismo día que llamé. Instalaron el split en dos horas, dejaron todo limpio y el precio fue exactamente el que me dijeron antes de empezar.</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">M</div>
+          <div>
+            <div class="testi-name">Marcela R.</div>
+            <div class="testi-loc">Lanús Este</div>
+          </div>
+        </div>
+      </li>
+      <li class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote class="testi-text">El técnico diagnosticó el problema en minutos. Carga de gas R32 con todo el equipo certificado. Volvió a enfriar como nuevo. Muy recomendable.</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">D</div>
+          <div>
+            <div class="testi-name">Diego F.</div>
+            <div class="testi-loc">Avellaneda</div>
+          </div>
+        </div>
+      </li>
+      <li class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote class="testi-text">Contraté el service anual para tres equipos del local. Puntualidad, trabajo prolijo y precio justo. Ya los tengo agendados para el próximo año.</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">C</div>
+          <div>
+            <div class="testi-name">Carolina M.</div>
+            <div class="testi-loc">CABA, Parque Patricios</div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -447,13 +495,15 @@
     <p>Respondemos en minutos y coordinamos el turno el mismo día.</p>
     <a href="https://wa.me/5491138479551?text=Hola%2C%20necesito%20ayuda%20con%20mi%20aire%20acondicionado"
        class="btn-wa"
-       aria-label="Contactar por WhatsApp"
+       aria-label="Contactar por WhatsApp para consulta de aire acondicionado"
        onclick="trackWhatsapp('CTA WhatsApp')">
-      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
       Escribir por WhatsApp
     </a>
   </div>
 </section>
+
+</main>
 
 <!-- ═══ FOOTER ══════════════════════════ -->
 <footer role="contentinfo">
@@ -464,11 +514,13 @@
         <div class="footer-brand">Aire<span>ZonaSur</span></div>
         <p class="footer-desc">Instalación, reparación y service de aire acondicionado en CABA y toda la Zona Sur del GBA.</p>
         <p class="footer-desc mt-2">
-          <a href="tel:+5491138479551" style="color:inherit;text-decoration:none;">
-            <i class="bi bi-telephone-fill" style="color:#0077b6;"></i> 11 3847-9551
+          <a href="tel:+5491138479551" style="color:inherit;text-decoration:none;" aria-label="Llamar al 11 3847-9551">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="#0077b6" aria-hidden="true" focusable="false" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+            11 3847-9551
           </a><br>
-          <a href="https://wa.me/5491138479551" style="color:inherit;text-decoration:none;">
-            <i class="bi bi-whatsapp" style="color:#25d366;"></i> WhatsApp
+          <a href="https://wa.me/5491138479551" style="color:inherit;text-decoration:none;" aria-label="Contactar por WhatsApp">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="#25d366" aria-hidden="true" focusable="false" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326z"/></svg>
+            WhatsApp
           </a>
         </p>
       </div>
@@ -476,20 +528,20 @@
       <div class="col-md-4">
         <div class="footer-heading">Servicios</div>
         <ul class="footer-links ps-0">
-          <li><a href="#servicios"><i class="bi bi-arrow-right-short" aria-hidden="true"></i>Instalación de split</a></li>
-          <li><a href="#servicios"><i class="bi bi-arrow-right-short" aria-hidden="true"></i>Reparación</a></li>
-          <li><a href="#servicios"><i class="bi bi-arrow-right-short" aria-hidden="true"></i>Service y limpieza</a></li>
-          <li><a href="#servicios"><i class="bi bi-arrow-right-short" aria-hidden="true"></i>Carga de gas</a></li>
+          <li><a href="#servicios">Instalación de split</a></li>
+          <li><a href="#servicios">Reparación</a></li>
+          <li><a href="#servicios">Service y limpieza</a></li>
+          <li><a href="#servicios">Carga de gas</a></li>
         </ul>
       </div>
 
       <div class="col-md-4">
         <div class="footer-heading">Zonas</div>
         <ul class="footer-links ps-0">
-          <li><a href="#contacto"><i class="bi bi-geo-alt" aria-hidden="true"></i>CABA</a></li>
-          <li><a href="#contacto"><i class="bi bi-geo-alt" aria-hidden="true"></i>Lanús · Lomas de Zamora</a></li>
-          <li><a href="#contacto"><i class="bi bi-geo-alt" aria-hidden="true"></i>Quilmes · Avellaneda</a></li>
-          <li><a href="#contacto"><i class="bi bi-geo-alt" aria-hidden="true"></i>Banfield · Temperley</a></li>
+          <li><a href="#contacto">CABA</a></li>
+          <li><a href="#contacto">Lanús · Lomas de Zamora</a></li>
+          <li><a href="#contacto">Quilmes · Avellaneda</a></li>
+          <li><a href="#contacto">Banfield · Temperley</a></li>
         </ul>
       </div>
 
@@ -500,56 +552,59 @@
     </div>
   </div>
 </footer>
-</main>
 
-<!-- ═══ WHATSAPP FLOAT ══════════════════ -->
+<!-- WhatsApp flotante -->
 <a href="https://wa.me/5491138479551?text=Hola%2C%20quiero%20un%20presupuesto"
    class="wa-float"
    aria-label="Contactar por WhatsApp"
-   rel="noopener"
    onclick="trackWhatsapp('Float WhatsApp')">
   <span class="wa-pulse" aria-hidden="true"></span>
-  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326z"/></svg>
 </a>
 
-<!-- ═══ SCRIPTS ═════════════════════════ -->
-<!-- Bootstrap JS – defer para no bloquear -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmS5rOwMOvwFSJDCGWghQ+GU8hv"
-        crossorigin="anonymous"
-        defer></script>
-
 <script>
-// ── Intersection Observer para animaciones reveal
-(function(){
-  var els = document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){
-    els.forEach(function(el){el.classList.add('visible')});
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('visible');
-        io.unobserve(e.target);
-      }
-    });
-  },{threshold:0.12});
-  els.forEach(function(el){io.observe(el)});
-})();
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+revealEls.forEach(el => observer.observe(el));
 
-// ── Scroll suave hacia secciones
-document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click',function(e){
-    var t=document.querySelector(this.getAttribute('href'));
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+// Hamburger menu
+const toggle = document.getElementById('nav-toggle');
+const menu = document.getElementById('nav-menu');
+toggle.addEventListener('click', () => {
+  const isOpen = menu.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', isOpen);
+  toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú de navegación');
+});
+// Cerrar menu al hacer click en un link
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menú de navegación');
   });
 });
+// Cerrar menu con Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.focus();
+  }
+});
 
-// ── Seguimiento seguro para WhatsApp
-window.gtag = window.gtag || function(){};
-function trackWhatsapp(label){
-  gtag('event','click_whatsapp',{event_category:'Contacto',event_label: label || 'WhatsApp'});
+// WhatsApp tracking (stub — reemplazar con gtag real)
+function trackWhatsapp(label) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click', { event_category: 'WhatsApp', event_label: label });
+  }
 }
 </script>
 
